@@ -40,9 +40,9 @@ timezone:      null
 
 #Site config
 title: 9leg
-description: java技术文章
-keywords: Java
-url: http://9leg.com
+description: c++技术文章
+keywords: cpp
+url: http://wyjiankang.com
 feed: /atom.xml
 favicon: /images/shortcut.jpg
 
@@ -61,13 +61,13 @@ nav:
 
 #Author config
 author:
-    name: zhujiajun
-    email: zhujiajun.me@gmail.com
+    name: frankz
+    email: zfengchao@gmail.com
     imageLink: /images/header.jpg
     simpleIntro: I Have a Dream
     detailIntro:
-      <p>高中时期天赋技能选错,接触了电脑编程,一发不可收拾,成了程序员一枚.</p>
-      <p>主要使用Java,会一点Android,正在学习Scala.</p>
+      <p>大学时期天赋技能选错,接触了电脑编程,一发不可收拾,成了程序员一枚.</p>
+      <p>主要使用C++,其它都会一点点.</p>
       <p></p>
 
 #Follow me, you can choose your icon by http://fortawesome.github.io/Font-Awesome/icons/#brand
@@ -75,11 +75,11 @@ follow:
   - class: icon-rss
     url: /atom.xml
   - class: icon-weibo
-    url: http://weibo.com/
+    url: http://weibo.com/2109725454/profile?topnav=1&wvr=6
   - class: icon-facebook
-    url: http://facebook.com/
+    url: https://www.facebook.com/frank.zheng.716
   - class: icon-github-alt
-    url: https://github.com/zJiaJun/
+    url: https://github.com/curious-boy/
   - class: icon-twitter
     url: http://twitter.com/
   - class: icon-google-plus
@@ -108,15 +108,10 @@ customLinks:
       url: http://javabynataraj.blogspot.in/
     message: About Java
 
-#googleAnaly, your id link UA-12345678-X
-googleAnaly:
-  config: false
-  id: UA-58146229-1
-
 #baidu tongji
 baiduTongji:
   config: true
-  id: c12b560f0372d5995701449b9eac606c
+  id: 3ef5dcf0f4b1ae76aa1d6559c3be2633
 
 #comment config
 disqus:
@@ -125,7 +120,7 @@ disqus:
 
 duoshuo:
   config: true
-  id: 9leg
+  id: frank
 
 #baidu share config
 baiduShare:
