@@ -1,4 +1,9 @@
-# visual studio的工具使用说明 #
+---
+layout: post
+title:  经常使用的几个visual studio插件介绍
+date:   2015/8/18 9:27:33 
+category: "c++"
+---
 
 
 ## vsvim ##
