@@ -55,6 +55,7 @@ category: "大数据"
 - cd tools
 
 ### 下载jdk-7u67-linux-x64.tar.gz ###
+
 #### wget下载百度云文件 ####
 - wget -c -O 文件名.后序名 "云盘下载地址"
 - tar -xzf jdk-7u67-linux-x64.gz -C ../softwares/
@@ -85,9 +86,11 @@ category: "大数据"
 
 ### 跟随官方文档进行配置 ###
 > http://hadoop.apache.org/docs/r2.6.0/hadoop-project-dist/hadoop-common/SingleCluster.html
+
 ### 修改hadoop-env.sh  ###
 > 设置jdk变量
 > export JAVA_HOME=/usr/lib/jvm/jdk7
+
 ### 修改core-site.xml ###
     <configuration>
     	<property>
@@ -99,7 +102,9 @@ category: "大数据"
     <value>/usr/local/bigdata/softwares/hadoop-2.6.0/data/tmp</value>
     </property>
     </configuration>
+
 ### 配置HDFS、YARN ###
+
 #### 修改hdfs-site.xml ####
     <configuration>
     <property>
@@ -107,6 +112,7 @@ category: "大数据"
     <value>1</value>
     </property>
     </configuration>
+
 #### 修改yarn-site.xml ####
     <configuration>
     <property>
