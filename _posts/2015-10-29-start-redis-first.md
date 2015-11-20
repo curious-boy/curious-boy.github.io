@@ -1,4 +1,10 @@
-# redis入门01：centos下安装redis #
+---
+layout: post
+title:  redis入门01：centos下安装redis
+date:   2015/10/29 20:02:21 
+category: "c++"
+---
+
 
 ## 安装 ##
     yum install wget

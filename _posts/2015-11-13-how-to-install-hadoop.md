@@ -1,4 +1,10 @@
-# Hadoop 安装笔记 #
+---
+layout: post
+title:  Hadoop 安装笔记（伪分布模式）
+date:   2015-11-13 12:55:11
+category: "大数据"
+---
+
 ## 系统环境 ubuntu ##
 ## 1、安装jdk ##
 apt-get install openjdk-7-jdk

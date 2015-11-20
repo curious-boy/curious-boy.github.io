@@ -1,4 +1,11 @@
-# 如何使用nmake命令编译程序 #
+---
+layout: post
+title:  如何使用nmake命令编译程序
+date:   2015/11/5 20:02:21 
+category: "c++"
+---
+
+
 ## 在安装vs之后，nmake工具也已经安装到系统中了，所在路径如 ##
     X:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin
 ### 可将以上路径添加到环境变量path中;  ###
