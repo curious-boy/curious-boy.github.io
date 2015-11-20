@@ -15,25 +15,28 @@ category: "大数据"
 ### 关闭防火墙 ###
 - 临时关闭 service iptables stop
 - 永久关闭 chkconfig iptables off
-- 
+
 ### 关闭SELinux ###
 - vim /etc/sysconfig/selinux
 - SELINUX=enforcing -->SELINUX=disabled
-- 
+
 ### 配置IP、DNS ###
 - 右上角，编辑Network Connections 
 - -->Edit... -->IPv4 Settings -->Method(Manual) 
 - --Add -->192.168.1.11 255.255.255.0 192.168.1.1 DNS servers:(8.8.8.8)
 - -->OK
-- 
+
 ### 重启网卡  ###
 - service network restart
+
 ### 配置主机名 ###
 - vim /etc/sysconfig/network
 - HOSTNAME=localhost --> HOSTNAME=hbase01.cd.com
+
 ### 配置IP映射关系 ###
 - vim /etc/hosts
 - 添加 10.237.154.69 hbase01.cd.com
+
 ### 设置SSH免密码登录 ###
 - ssh-keygen -t rsa
 - 四个回车
@@ -42,6 +45,7 @@ category: "大数据"
 - 输入密码
 - 测试 ssh 10.237.154.69,如果不需要密码，登录成功，即ssh无密码登录是成功的
 - 重启linux
+
 ### 安装JDK ###
 - 将所有需要的程序放到一个目录
 - mkdir bigdata
@@ -49,6 +53,7 @@ category: "大数据"
 - mkdir tools
 - mkdir softwares
 - cd tools
+
 ### 下载jdk-7u67-linux-x64.tar.gz ###
 #### wget下载百度云文件 ####
 - wget -c -O 文件名.后序名 "云盘下载地址"
@@ -56,23 +61,28 @@ category: "大数据"
 - cd ../softwares/
 - cd jdk-7u67-linux-x64
 - pwd
+
 ### 将目录配置到环境变量中 ###
 - vim /etc/profile
 - 添加
 - export JAVA_HOME=/root/bigdata/softwares/jdk1.7.0_67
 - export PATH=$PATH:$JAVA_HOME/bin
 - 保存
+
 ### 刷新配置，让配置生效 ###
 - source /etc/profile
 ### 验证是否已经安装成功 ###
 - java -version
+
 ## 二、Hadoop环境搭建 ##
+
 ### 下载编译 ###
 - http://archive.cloudera.com/cdh5/cdh/5/
 - 进入hadoop.apache.org 下载2.6.0版本
 - 下载 wget http://apache.fayea.com/hadoop/common/hadoop-2.6.0/hadoop-2.6.0.tar.gz
 - 解压 tar -xzf hadoop-2.6.0.tar.gz -C ../softwares/
 - cd ../softwares/
+
 ### 跟随官方文档进行配置 ###
 > http://hadoop.apache.org/docs/r2.6.0/hadoop-project-dist/hadoop-common/SingleCluster.html
 ### 修改hadoop-env.sh  ###
@@ -117,7 +127,9 @@ category: "大数据"
 
 ### 格式化 ###
 - bin/hdfs namenode -format
+- 
 ### 启动并测试 ###
+
 #### 启动 ####
 - sbin/start-dfs.sh
 - sbin/start-yarn.sh 
