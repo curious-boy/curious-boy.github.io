@@ -10,7 +10,7 @@ category: "大数据"
 - 伪分布式模式：相关进程各自运行在不同的jvm中，适合学习都适用
 - 集群模式：企业中使用的
 
-## 一、Linux环境搭建 ##
+## Linux环境搭建 ##
 ### 关闭防火墙 ###
 - 临时关闭 service iptables stop
 - 永久关闭 chkconfig iptables off
@@ -111,7 +111,7 @@ category: "大数据"
     </configuration>
 
 ### 格式化 ###
-bin/hdfs namenode -format
+- bin/hdfs namenode -format
 ### 启动并测试 ###
 #### 启动 ####
 - sbin/start-dfs.sh
