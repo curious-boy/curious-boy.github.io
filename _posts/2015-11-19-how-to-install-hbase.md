@@ -11,17 +11,21 @@ category: "大数据"
 - 集群模式：企业中使用的
 
 ## Linux环境搭建 ##
+
 ### 关闭防火墙 ###
 - 临时关闭 service iptables stop
 - 永久关闭 chkconfig iptables off
+- 
 ### 关闭SELinux ###
 - vim /etc/sysconfig/selinux
 - SELINUX=enforcing -->SELINUX=disabled
+- 
 ### 配置IP、DNS ###
 - 右上角，编辑Network Connections 
 - -->Edit... -->IPv4 Settings -->Method(Manual) 
 - --Add -->192.168.1.11 255.255.255.0 192.168.1.1 DNS servers:(8.8.8.8)
 - -->OK
+- 
 ### 重启网卡  ###
 - service network restart
 ### 配置主机名 ###
@@ -100,6 +104,7 @@ category: "大数据"
     <value>mapreduce_shuffle</value>
     </property>
     </configuration>
+
 #### 修改mapred-site.xml ####
 将mapred-site.xml.template重命名为mapred-site.xml，内容是
 
