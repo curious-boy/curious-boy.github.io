@@ -22,3 +22,11 @@ Easydarwin配置文件相关部分
 - 返回，如图 
 - ![](http://i.imgur.com/JQoBD0X.png)
 - 可以直接在vlc中播放 http://127.0.0.1/live/live.m3u8
+
+## 网页中播放hls ##
+- 播放器地址：`https://momovi.com/opensource/momovi-video-hls`
+- 把player.html中的播放源改为`http://127.0.0.1/live/live.m3u8`
+- ![](http://i.imgur.com/buN4QBz.png)
+
+
+

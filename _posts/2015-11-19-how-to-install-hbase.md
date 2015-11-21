@@ -10,7 +10,7 @@ category: "大数据"
 - 伪分布式模式：相关进程各自运行在不同的jvm中，适合学习都适用
 - 集群模式：企业中使用的
 
-## Linux环境搭建 ##
+## 一、Linux环境搭建 ##
 
 ### 关闭防火墙 ###
 - 临时关闭 service iptables stop
@@ -55,7 +55,7 @@ category: "大数据"
 - cd tools
 
 ### 下载jdk-7u67-linux-x64.tar.gz ###
-
+    wget url
 #### wget下载百度云文件 ####
 - wget -c -O 文件名.后序名 "云盘下载地址"
 - tar -xzf jdk-7u67-linux-x64.gz -C ../softwares/
@@ -72,6 +72,7 @@ category: "大数据"
 
 ### 刷新配置，让配置生效 ###
 - source /etc/profile
+
 ### 验证是否已经安装成功 ###
 - java -version
 
@@ -85,11 +86,11 @@ category: "大数据"
 - cd ../softwares/
 
 ### 跟随官方文档进行配置 ###
-> http://hadoop.apache.org/docs/r2.6.0/hadoop-project-dist/hadoop-common/SingleCluster.html
+- http://hadoop.apache.org/docs/r2.6.0/hadoop-project-dist/hadoop-common/SingleCluster.html
 
 ### 修改hadoop-env.sh  ###
-> 设置jdk变量
-> export JAVA_HOME=/usr/lib/jvm/jdk7
+- 设置jdk变量
+- export JAVA_HOME=/usr/lib/jvm/jdk7
 
 ### 修改core-site.xml ###
     <configuration>
@@ -104,6 +105,7 @@ category: "大数据"
     </configuration>
 
 ### 配置HDFS、YARN ###
+- 修改相应的配置文件
 
 #### 修改hdfs-site.xml ####
     <configuration>
@@ -133,7 +135,7 @@ category: "大数据"
 
 ### 格式化 ###
 - bin/hdfs namenode -format
-- 
+
 ### 启动并测试 ###
 
 #### 启动 ####
@@ -148,9 +150,12 @@ category: "大数据"
 - bin/hadoop fs -cat /user/root/mr/wc/out/part-r-00000
 
 ## 三、Hbase环境搭建 ##
+
 ### 下载解压 ###
+
 ### 修改hbase-env.sh ###
  - export JAVA_HOME=/usr/lib/jvm/jdk7
+ - 
 ### 修改hbase-site.xml ###
     <configuration>
     <property>
@@ -166,8 +171,10 @@ category: "大数据"
     	<value>true</value>
     </property>
     </configuration>
+
 ### 修改regionservers ###
 	localhost-->192.168.2.11
+
 ### 启动 ###
     bin/hbase-daemon.sh start zookeeper
     bin/hbase-daemon.sh start master
