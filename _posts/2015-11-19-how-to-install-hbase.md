@@ -56,6 +56,7 @@ category: "大数据"
 
 ### 下载jdk-7u67-linux-x64.tar.gz ###
     wget url
+
 #### wget下载百度云文件 ####
 - wget -c -O 文件名.后序名 "云盘下载地址"
 - tar -xzf jdk-7u67-linux-x64.gz -C ../softwares/
