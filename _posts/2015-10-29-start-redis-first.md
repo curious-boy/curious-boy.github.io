@@ -2,21 +2,26 @@
 layout: post
 title:  redis入门01：centos下安装redis
 date:   2015/10/29 20:02:21 
-category: "c++"
+category: "java"
 ---
 
 
 ## 安装 ##
-    yum install wget
-    wget http://download.redis.io/releases/redis-3.0.1.tar.gz
-    tar xzf redis-3.0.1.tar.gz
-    cd redis-3.0.1
-    make
-    yum install tcl
-    make test
-    make install
+- yum install wget
+- wget http://download.redis.io/releases/redis-3.0.1.tar.gz
+- tar xzf redis-3.0.1.tar.gz
+- cd redis-3.0.1
+- make
+- yum install tcl
+- make test
+- make install
+
 ## 修改配置文件redis.conf ##
-    daemonize yes
+- 内容修改 daemonize no --> daemonize yes 
+- 创建目录 mkdir /usr/local/redis
+- cp redis.conf /usr/local/redis
+
+
 ## 编写启动shell: /etc/init.d/redis ##
     # chkconfig: 2345 10 90
     # description: Start and Stop redis
@@ -68,15 +73,19 @@ category: "c++"
     echo "Usage: /etc/init.d/redis {start|stop|restart|force-reload}" >&2
      exitxit 1
     esac
+
 ## 赋予运行权限，命令如下： ##
-    chmod +x /etc/init.d/redis
-## 设置开机启动 ##
-    # 尝试启动或停止redis
-    service redis start
-    service redis stop
+- chmod +x /etc/init.d/redis
+
+## 启动或停止redis ##
+- service redis start
+- service redis stop
       
-    # 开启服务自启动
-    chkconfig redis on
+## 开启服务自启动 ##
+- chkconfig redis on
+
+## shell运行 ##
+- redis-cli
 
 The End.
     

@@ -1,7 +1,17 @@
+---
+layout: post
+title:  EasyDarwin支持HLS
+date:   2015/10/21 14:11:27  
+category: "流媒体"
+---
+
+
 # EasyDarwin支持HLS #
+
 ## 正常运行easydarwin ##
 或在调试模式下运行也可以，重点注意配置文件中的
 MOVIE_FOLDER设置；
+
 ## 配置nginx ##
 WEB目录为easydarwin.xml中movie_folder同一个目录、
 nginx配置文件相关部分，如下
