@@ -1,4 +1,4 @@
-#[wyjiankang.com](http://thinkando.xyz/)
+#[thinkando.xyz](http://thinkando.xyz/)
 
 
 ###请使用自己申请的网站统计Id，评论Id等
