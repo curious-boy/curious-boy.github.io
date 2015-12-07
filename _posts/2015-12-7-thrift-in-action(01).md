@@ -23,7 +23,7 @@ Thrift实际上是实现了C/S模式，通过代码生成工具将接口定义�
 
 # 3 支持的数据传输格式、数据传输方式和服务模型   
 
-## 3.1 支持的传输格式   
+## 3.1 支持的传输格式 ##  
 - TBinaryProtocol – 二进制格式.
 - TCompactProtocol – 压缩格式
 - TJSONProtocol – JSON格式
