@@ -55,11 +55,16 @@ Thrift采用的是C/S模型，通过编写标准的接口，再通过编译程�
 其它两个文件为同步和异步的示例服务端的代码；
 
 ## 创建服务端程序 ##
+
 ### 创建空项目 ###
+
 ### 引入数据类型文件和接口类文件 ###
+
 ### 创建主程序文件 ###
+
 如main.cpp  
-在Twitter_async_server.skeleton.cpp文件中生成了服务函数处理类TWitterAsyncHandler，直接使用，将函数的处理逻辑改成自己需要的，这一点和同步模式是一致的。  
+在Twitter_async_server.skeleton.cpp文件中生成了服务函数处理类TWitterAsyncHandler，直接使用，将函数的处理逻辑改成自己需要的，这一点和同步模式是一致的。
+  
 ### main函数的编写 ###
 
     int main(int argc, char **argv) {
@@ -86,8 +91,11 @@ Thrift采用的是C/S模型，通过编写标准的接口，再通过编译程�
     	server.serve();
     	return 0;
     }
+
 ### 服务程序头文件的引用目录 ###
+
 ![](https://raw.githubusercontent.com/curious-boy/myfiles/master/pic/mysite/asyncThrift/async_thrift_include_server.png)
+
 ### 库文件的引用目录 ###
 ![](https://raw.githubusercontent.com/curious-boy/myfiles/master/pic/mysite/asyncThrift/async_thrift_lib_server.png)
 
@@ -102,8 +110,11 @@ Thrift采用的是C/S模型，通过编写标准的接口，再通过编译程�
 ## 创建客户端程序 ##
 
 ### 创建空项目 ###
+
 ### 引入数据类型文件和接口类文件 ###
+
 ### 创建主程序文件 ###
+
 如client.cpp 
  
 客户端对象  
@@ -240,7 +251,9 @@ Thrift采用的是C/S模型，通过编写标准的接口，再通过编译程�
 ![](https://raw.githubusercontent.com/curious-boy/myfiles/master/pic/mysite/asyncThrift/async_thrift_include_client.png)
 
 ### 库文件引用目录 ###
+
 ![](https://raw.githubusercontent.com/curious-boy/myfiles/master/pic/mysite/asyncThrift/async_thrift_lib_client.png)
+
 ### 库文件引用 ###
 
 - libthrift.lib
@@ -250,4 +263,5 @@ Thrift采用的是C/S模型，通过编写标准的接口，再通过编译程�
 - libevent_extras.lib
 
 [示例程序](https://github.com/curious-boy/asyncThrift.git)  
+
 注：如果在编译过程中出现库冲突的问题，可能需要在忽略特定库；如msvcprtd.lib;msvcrtd.lib；
