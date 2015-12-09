@@ -48,7 +48,7 @@ Thrift采用的是C/S模型，通过编写标准的接口，再通过编译程�
 
 ### 生成的文件 ###
 
-![](https://github.com/curious-boy/myfiles/blob/master/pic/mysite/asyncThrift/async_thrift_gen_files.png)
+![](https://raw.githubusercontent.com/curious-boy/myfiles/master/pic/mysite/asyncThrift/async_thrift_gen_files.png)
 
 红色框中为定义的数据类型或结构体；  
 蓝色框中为服务接口类；  
@@ -87,9 +87,9 @@ Thrift采用的是C/S模型，通过编写标准的接口，再通过编译程�
     	return 0;
     }
 ### 服务程序头文件的引用目录 ###
-![](http://i.imgur.com/Z4AmGoS.png)
+![](https://raw.githubusercontent.com/curious-boy/myfiles/master/pic/mysite/asyncThrift/async_thrift_include_server.png)
 ### 库文件的引用目录 ###
-![](http://i.imgur.com/CI4QXVA.png)
+![](https://raw.githubusercontent.com/curious-boy/myfiles/master/pic/mysite/asyncThrift/async_thrift_lib_server.png)
 
 ### 引用的库文件 ###
 
@@ -237,10 +237,10 @@ Thrift采用的是C/S模型，通过编写标准的接口，再通过编译程�
 
 ### 服务程序头文件引用目录 ###
 
-![](http://i.imgur.com/G8MvAlI.png)
+![](https://raw.githubusercontent.com/curious-boy/myfiles/master/pic/mysite/asyncThrift/async_thrift_include_client.png)
 
 ### 库文件引用目录 ###
-![](http://i.imgur.com/WW1CgA3.png)
+![](https://raw.githubusercontent.com/curious-boy/myfiles/master/pic/mysite/asyncThrift/async_thrift_lib_client.png)
 ### 库文件引用 ###
 
 - libthrift.lib
