@@ -48,7 +48,7 @@ Thrift采用的是C/S模型，通过编写标准的接口，再通过编译程�
 
 ### 生成的文件 ###
 
-![](http://i.imgur.com/7zmUJJJ.png)
+![](https://github.com/curious-boy/myfiles/blob/master/pic/mysite/asyncThrift/async_thrift_gen_files.png)
 
 红色框中为定义的数据类型或结构体；  
 蓝色框中为服务接口类；  
