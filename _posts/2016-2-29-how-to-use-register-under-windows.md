@@ -14,6 +14,7 @@ published: true
 开始-->运行，输入regedit，确定。
 
 ### 注册表的写入与读取 ###
+
 #### 相关工具函数 ####
 - //返回基项
 - HKEY GetBaseRegKey(char* keystr);

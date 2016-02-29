@@ -8,16 +8,19 @@ published: true
 
 ## 线程的创建 ##
 windows下创建线程的函数 CreateThread
+
 #### 1、与其它系统的函数调用的统一   ####
 创建宏定义
 
     #define pthread_create(pid, NULL, func, thread_data) ((*pid=::CreateThread(NULL,sizeof(thread_data),func,thread_data,0,NULL))!=NULL)
+
 #### 2、创建线程示例 ####
     HANDLE hPid;
     if(pthread_create(&hPid, NULL, OpenURLThread, this) )
     {
      // 创建线程成功
     }
+
 #### 3、挂起线程与线程恢复 ####
     SuspendThread 挂起线程
     DWORD WINAPI SuspendThread(
@@ -46,6 +49,7 @@ windows下创建线程的函数 CreateThread
        休眠(或挂起)-->恢复 -->退出 
 
 #### 多线程的同步与互斥 ####
+
 #### 四种进程或线程同步互斥的控制方法 ####
 - 1、临界区:通过对多线程的串行化来访问公共资源或一段代码，速度快，适合控制数据访问。 
 - 2、互斥量:为协调共同对一个共享资源的单独访问而设计的。 

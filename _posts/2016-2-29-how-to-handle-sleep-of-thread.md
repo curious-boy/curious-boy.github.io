@@ -1,3 +1,4 @@
+
 ---
 layout: post
 title: windows c++ 开发系列3 windows下线程休眠的处理
@@ -19,8 +20,10 @@ published: true
 
 在windows中，并没有提供其它的可选择的休眠函数，如果在界面程序的线程休眠期间，不影响到其它线程和主进程界面的运行呢？
 方案 利用定时器
+
 ### 步骤1 ###
 在线程需要休眠的地方，由原来的直接调用sleep 函数，改为设置定时器，时间与休眠函数的时间一致；然后，挂起线程；
+
 ### 代码 ###
     SetTimer(this->GetHWND(),400,10000,NULL);
     SuspendThread(hThreadPid);

@@ -10,6 +10,7 @@ published: true
 
 废话不多说，直接上干货
 实现一个客户端的连接过程，分以下几步
+
 ## 1、创建入口 ##
     bool createEntry(const wchar_t* rasConn, const wchar_t* serverIP, const wchar_t* userName, const wchar_t* psk, int type)
     {
@@ -135,6 +136,7 @@ published: true
     
     return true;
     }
+
 ## 4、删除入口 ##
     bool VpnDial::deleteVpnEntry(const wchar_t* rasConn )
     {
